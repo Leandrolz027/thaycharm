@@ -1,0 +1,159 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: rgba(255, 5, 172, 0.24);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 250px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 15px;
+}
+
+header nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    color: #ffddc1;
+}
+
+/* Estilo das seções do catálogo */
+.product-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(255, 5, 172, 0.89);
+    margin-bottom: 30px;
+}
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.product {
+    width: 280px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    color: rgba(255, 5, 172, 0.89);
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.product .btn-buy {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: rgba(255, 5, 172, 0.89);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.product .btn-buy:hover {
+    background-color: #ff3c9a;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color:  rgba(250, 152, 217, 0.89);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-list {
+        justify-content: center;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,322 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Corpo e fontes */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#777;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:   rgba(250, 152, 217, 0.89);
+    padding: 15px 30px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 30px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #000000;
+}
+
+.logotipo {
+    width: 190px;
+    height: 90px;
+    object-fit: cover;
+}
+
+/* Seção Hero */
+.hero {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: rgba(250, 152, 217, 0.89);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: rgba(250, 152, 217, 0.89);
+}
+
+
+.cta-button {
+    padding: 15px 40px;
+    background-color: rgba(250, 152, 217, 0.89);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color:rgba(250, 152, 217, 0.89);
+}
+
+.about {
+    background-color: #fff;
+    padding: 80px 30px;
+    text-align: center;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: rgba(250, 152, 217, 0.89); /* Cor para dar destaque */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about-container .about-text {
+    width: 80%;
+    max-width: 900px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.about-container .about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.about-container .about-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.about-container .about-image {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.about-container .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.products {
+    background-color: #f5f5f5;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 300px; 
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.product-card p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.product-card a {
+    text-decoration: none;
+    background-color:  rgba(250, 152, 217, 0.89);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.product-card a:hover {
+    background-color:  rgba(247, 108, 200, 0.89);
+}
+
+
+footer {
+    background-color:  rgba(250, 152, 217, 0.89);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries */
+
+/* Para telas pequenas como smartphones */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .navbar nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container .about-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-container .about-image {
+        width: 100%;
+    }
+
+    .products h2 {
+        font-size: 2rem;
+    }
+
+    .product-gallery {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* Para telas menores como smartphones verticais */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .about-container .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-container .about-text p {
+        font-size: 1rem;
+    }
+
+    .product-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .product-card p {
+        font-size: 1rem;
+    }
+}
